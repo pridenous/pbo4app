@@ -20,7 +20,7 @@
 
               <!-- SidebarSearch Form -->
               <div class="form-inline">
-                  <div class="input-group" data-widget="sidebar-search">
+                  <div class="input-group" data-widget="side    bar-search">
                       <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
                       <div class="input-group-append">
                           <button class="btn btn-sidebar">
@@ -39,21 +39,22 @@
                           <a href="#" class="nav-link active">
                               <i class="nav-icon fas fa-tachometer-alt"></i>
                               <p>
-                                  Starter Pages
+                                  Administrasi
                                   <i class="right fas fa-angle-left"></i>
                               </p>
                           </a>
                           <ul class="nav nav-treeview">
                               <li class="nav-item">
-                                  <a href="#" class="nav-link active">
+                                  <!-- <a href="#" class="nav-link active"> -->
+                                  <a href="{{asset('')}}users" class="nav-link">
                                       <i class="far fa-circle nav-icon"></i>
-                                      <p>Active Page</p>
+                                      <p>User Maintenance</p>
                                   </a>
                               </li>
                               <li class="nav-item">
                                   <a href="#" class="nav-link">
                                       <i class="far fa-circle nav-icon"></i>
-                                      <p>Inactive Page</p>
+                                      <p>Ubah Password</p>
                                   </a>
                               </li>
                           </ul>

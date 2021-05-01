@@ -15,9 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::group(['middleware' => 'checkSession'], function () {
-    Route::get('/', function () {
-        return view('layout.app');
-    });
+    Route::get('/', 'HomeController@index');
+    Route::get('/users', 'UserController@index');
+    Route::get('/list', 'UserController@list');
+    Route::get('/add', 'UserController@tambah');
+    Route::get('/edit/{id}', 'UserController@edit');
+
+    Route::post('/simpan', 'UserController@simpan');
+    Route::post('/update', 'UserController@update');
 });
 
 // Login

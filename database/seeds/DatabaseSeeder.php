@@ -14,10 +14,10 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UsersTableSeeder::class);
         sysuser::insert([
-            'uname' => 'admin',
+            'uname' => 'test',
             'namalengkap' => 'Administrator',
-            'email' => 'admin@pbo3.com',
-            'upass' => sha1('admin')
+            'email' => 'adminokk@pbo3.com',
+            'upass' => sha1('test')
         ]);
     }
 }

@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::group(['middleware' => 'checkSession'], function () {
+    Route::get('/', function () {
+        return view('welcome');
+    });
 });
+
+// Login
+Route::get('/login', 'HomeController@login');
+
+// Login submit
+Route::post('/masuk', 'HomeController@masuk');

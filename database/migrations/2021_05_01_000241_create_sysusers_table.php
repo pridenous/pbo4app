@@ -15,7 +15,7 @@ class CreateSysusersTable extends Migration
     {
         Schema::create('sysusers', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->unique();
+            $table->string('uname')->unique();
             $table->string('namalengkap');
             $table->string('email')->nullable();
             $table->string('upass');

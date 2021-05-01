@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\sysuser;
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,5 +13,11 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
+        sysuser::insert([
+            'uname' => 'admin',
+            'namalengkap' => 'Administrator',
+            'email' => 'admin@pbo3.com',
+            'upass' => sha1('admin')
+        ]);
     }
 }
